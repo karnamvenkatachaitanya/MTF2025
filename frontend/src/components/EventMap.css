@@ -1,0 +1,194 @@
+/* EventMap.css - Light Theme */
+.map-section {
+    padding: 5rem 0;
+    background-color: var(--color-bg-light);
+}
+
+.map-container {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.map-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.map-subtitle {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #EAB308;
+    /* Yellow/Gold */
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.map-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    font-family: serif;
+}
+
+.text-gold {
+    color: #EAB308;
+}
+
+.map-desc {
+    font-size: 1.125rem;
+    color: #64748b;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.map-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: stretch;
+}
+
+@media (min-width: 1024px) {
+    .map-grid {
+        grid-template-columns: 1.2fr 0.8fr;
+        /* Map gets slightly more space */
+        gap: 3rem;
+    }
+}
+
+/* Left Column: Map */
+.map-frame-container {
+    background: white;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    min-height: 400px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+}
+
+.google-map-iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+}
+
+/* Right Column: Details */
+.venue-details-card {
+    background: white;
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.venue-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    font-family: serif;
+    margin-bottom: 2rem;
+}
+
+.venue-info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.venue-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.venue-icon-box {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+    background-color: #FEF9C3;
+    /* Yellow-100 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.text-gold-dark {
+    color: #CA8A04;
+    /* Yellow-600 */
+}
+
+.venue-text {
+    flex: 1;
+}
+
+.venue-label {
+    display: block;
+    font-size: 0.875rem;
+    color: #94a3b8;
+    margin-bottom: 0.25rem;
+}
+
+.venue-val {
+    font-weight: 600;
+    color: var(--color-text-dark);
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.venue-actions {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.btn-map-gold {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background-color: #EAB308;
+    color: white;
+    /* Or Dark Blue #0F172A depending on contrast preference, Black text usually better on yellow */
+    color: #0F172A;
+    font-weight: 700;
+    border-radius: 0.75rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 4px 6px -1px rgba(234, 179, 8, 0.3);
+}
+
+.btn-map-gold:hover {
+    background-color: #CA8A04;
+}
+
+.btn-map-outline {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background-color: white;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    font-weight: 700;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-map-outline:hover {
+    background-color: #f8fafc;
+}

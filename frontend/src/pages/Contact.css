@@ -1,0 +1,178 @@
+/* Contact.css - Dark Blue Theme */
+.contact-container {
+    min-height: 100vh;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+    background-color: #0c265c;
+    /* Deep Blue from image */
+    background: radial-gradient(circle at center, #1e3a8a 0%, #0f172a 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-content {
+    max-width: 64rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    width: 100%;
+}
+
+/* Header */
+.contact-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.pre-heading {
+    display: block;
+    color: #fbbf24;
+    /* Amber-400 */
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.main-heading {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-family: serif;
+    /* Matching the serif font in image */
+}
+
+.highlight-text {
+    color: #fbbf24;
+    /* Amber-400 */
+}
+
+.sub-heading {
+    color: #94a3b8;
+    /* Slate-400 */
+    font-size: 1.125rem;
+}
+
+/* Organisers Grid */
+.organisers-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+    .organisers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .organisers-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.organiser-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.organiser-card:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.icon-box {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fbbf24;
+    color: #fbbf24;
+    flex-shrink: 0;
+}
+
+.org-details h3 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    color: white;
+}
+
+.org-details p {
+    color: #cbd5e1;
+    /* Slate-300 */
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+/* Footer Section */
+.contact-footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.email-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem 2rem;
+    border-radius: 9999px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.2s;
+}
+
+.email-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #fbbf24;
+    color: #fbbf24;
+}
+
+.social-text {
+    color: #94a3b8;
+    margin-bottom: -1rem;
+    /* Pull content closer */
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 1px solid #fbbf24;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fbbf24;
+    transition: all 0.2s;
+}
+
+.social-icon:hover {
+    background: #fbbf24;
+    color: #0f172a;
+    transform: scale(1.1);
+}

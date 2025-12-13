@@ -1,0 +1,156 @@
+/* Register.css - Light Theme */
+.register-container {
+    min-height: 100vh;
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+    background-color: var(--color-bg-light);
+}
+
+.register-success-container {
+    min-height: 100vh;
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+    background-color: var(--color-bg-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-content {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.register-card-wrapper {
+    width: 100%;
+    max-width: 32rem;
+}
+
+.register-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+    padding: 2rem;
+    border-radius: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .register-card {
+        padding: 3rem;
+    }
+}
+
+.success-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    max-width: 28rem;
+    width: 100%;
+    text-align: center;
+}
+
+.success-icon {
+    width: 5rem;
+    height: 5rem;
+    color: #22c55e;
+    margin: 0 auto 1.5rem auto;
+}
+
+.success-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--color-text-dark);
+    margin-bottom: 1rem;
+}
+
+.success-text {
+    color: #64748b;
+    /* slate-500 */
+    margin-bottom: 2rem;
+}
+
+.card-title-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.title-icon {
+    color: var(--color-secondary);
+    width: 2rem;
+    height: 2rem;
+}
+
+/* Card Headers in RegisterForm needs targeting generally but h2 usually follows parent color or global */
+.register-card h2 {
+    color: var(--color-text-dark);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    color: #475569;
+    /* slate-600 */
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.form-input {
+    width: 100%;
+    background-color: #f1f5f9;
+    /* slate-100 */
+    border: 1px solid #e2e8f0;
+    border-radius: 0.75rem;
+    padding: 0.75rem 1rem;
+    color: var(--color-text-dark);
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-input:focus {
+    border-color: var(--color-secondary);
+    background-color: white;
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: var(--color-secondary);
+    color: white;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.btn-submit:hover {
+    background-color: #0284c7;
+    box-shadow: 0 10px 15px -3px rgba(14, 165, 233, 0.25);
+}
+
+.btn-submit:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.error-text {
+    color: #ef4444;
+    /* red-500 */
+    text-align: center;
+    font-size: 0.875rem;
+    margin-top: 1rem;
+}

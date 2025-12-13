@@ -1,0 +1,119 @@
+/* EventCategories.css - Light Theme */
+.categories-section {
+    padding: 5rem 0;
+    background-color: white;
+}
+
+.categories-container {
+    max-width: 90rem;
+    /* Wider container for 6 cols */
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.categories-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.categories-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #EAB308;
+    /* Yellow/Gold */
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.categories-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    font-family: serif;
+}
+
+.categories-desc {
+    color: #64748b;
+    max-width: 40rem;
+    margin: 0 auto;
+    font-size: 1.125rem;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+@media (min-width: 640px) {
+    .categories-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .categories-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 1280px) {
+    .categories-grid {
+        grid-template-columns: repeat(6, 1fr);
+        /* 6 columns */
+    }
+}
+
+.category-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    padding: 1.5rem 1rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 140px;
+    gap: 1rem;
+}
+
+.category-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--color-secondary);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+}
+
+.category-icon-wrapper {
+    width: 3rem;
+    /* Smaller icon wrapper */
+    height: 3rem;
+    background: #f1f5f9;
+    /* Light slate */
+    border-radius: 0.75rem;
+    /* Soft square */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #475569;
+    /* Slate 600 */
+    transition: all 0.3s ease;
+}
+
+.category-card:hover .category-icon-wrapper {
+    background: var(--color-secondary);
+    color: white;
+}
+
+.category-name {
+    color: var(--color-text-dark);
+    font-weight: 600;
+    font-size: 0.9rem;
+    /* Smaller text */
+    line-height: 1.2;
+}

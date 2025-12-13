@@ -1,0 +1,94 @@
+/* Global Styles */
+:root {
+  --color-primary: #0F172A;
+  /* Slate 900 - Keep as primary brand color */
+  --color-secondary: #0EA5E9;
+  /* Sky 500 */
+  --color-accent: #EAB308;
+  /* Yellow 500 */
+
+  --color-bg-light: #F8FAFC;
+  /* Slate 50 */
+  --color-text-dark: #1e293b;
+  /* Slate 800 */
+  --color-text-light: #f1f5f9;
+  /* Slate 100 */
+
+  --glass-border: rgba(0, 0, 0, 0.1);
+  /* Adjusted for light theme */
+  --glass-bg: rgba(255, 255, 255, 0.7);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-bg-light);
+  color: var(--color-text-dark);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background: var(--color-secondary);
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Glassmorphism Utilities */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glass-dark {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #38BDF8, #0EA5E9);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gold {
+  color: #D97706;
+}
