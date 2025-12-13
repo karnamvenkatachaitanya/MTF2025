@@ -4,7 +4,7 @@ import './Register.css';
 
 const Register = () => {
     const [formData, setFormData] = useState({
-        name: '', phone: '', email: '', city: ''
+        name: '', phone: '', email: '', city: '', gender: '', age: ''
     });
     const [status, setStatus] = useState('idle'); // idle, submitting, success, error
 
@@ -12,7 +12,7 @@ const Register = () => {
         e.preventDefault();
         setStatus('submitting');
 
-        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxBPNhf2ce09_0F3jvw9bUq-c30GKxakCWTS7_qBjHlZS0w0DEVU-Ednv4Z-RSyzPeN/exec";
+        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwO5mzWKcJQSEn8X70dMPDtLJL_l56R7WphHQfJCkw8YeDh5An7kELUTcClRT4lvy3v/exec";
 
         try {
             // Save to LocalStorage (Backup)
@@ -64,21 +64,21 @@ const Register = () => {
                             <div className="form-group">
                                 <label className="form-label">Full Name</label>
                                 <input
-                                    required
                                     type="text"
                                     className="form-input"
                                     value={formData.name}
                                     onChange={e => setFormData({ ...formData, name: e.target.value })}
+                                    placeholder="Optional"
                                 />
                             </div>
                             <div className="form-group">
                                 <label className="form-label">Phone Number</label>
                                 <input
-                                    required
                                     type="tel"
                                     className="form-input"
                                     value={formData.phone}
                                     onChange={e => setFormData({ ...formData, phone: e.target.value })}
+                                    placeholder="Optional"
                                 />
                             </div>
                             <div className="form-group">
@@ -88,16 +88,40 @@ const Register = () => {
                                     className="form-input"
                                     value={formData.email}
                                     onChange={e => setFormData({ ...formData, email: e.target.value })}
+                                    placeholder="Optional"
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label className="form-label">Gender</label>
+                                <select
+                                    className="form-input"
+                                    value={formData.gender}
+                                    onChange={e => setFormData({ ...formData, gender: e.target.value })}
+                                >
+                                    <option value="">Select Gender (Optional)</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div className="form-group">
+                                <label className="form-label">Age</label>
+                                <input
+                                    type="number"
+                                    className="form-input"
+                                    value={formData.age}
+                                    onChange={e => setFormData({ ...formData, age: e.target.value })}
+                                    placeholder="Optional"
                                 />
                             </div>
                             <div className="form-group">
                                 <label className="form-label">City</label>
                                 <input
-                                    required
                                     type="text"
                                     className="form-input"
                                     value={formData.city}
                                     onChange={e => setFormData({ ...formData, city: e.target.value })}
+                                    placeholder="Optional"
                                 />
                             </div>
 

@@ -21,6 +21,8 @@ function doPost(e) {
         data.phone,
         data.email,
         data.city,
+        data.gender || 'N/A',
+        data.age || 'N/A',
         data.id || 'N/A'
     ]);
 
@@ -31,10 +33,12 @@ function doPost(e) {
             MailApp.sendEmail({
                 to: data.email,
                 subject: "Your Visitor Pass - Mega Trade Fair 2025",
-                body: "Hello " + data.name + ",\n\n" +
+                body: "Hello " + (data.name || 'Visitor') + ",\n\n" +
                     "Thank you for registering for the Mega Trade Fair 2025 in Vizianagaram!\n\n" +
                     "--- VISITOR PASS DETAILS ---\n" +
-                    "Visitor Name: " + data.name + "\n" +
+                    "Visitor Name: " + (data.name || 'N/A') + "\n" +
+                    "Gender:       " + (data.gender || 'N/A') + "\n" +
+                    "Age:          " + (data.age || 'N/A') + "\n" +
                     "Visitor ID:   " + (data.id || 'N/A') + "\n" +
                     "----------------------------\n\n" +
                     "Your registration is confirmed.\n" +

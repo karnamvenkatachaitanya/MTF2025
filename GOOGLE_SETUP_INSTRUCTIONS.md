@@ -13,7 +13,9 @@
         - `C1`: **phone**
         - `D1`: **email**
         - `E1`: **city**
-        - `F1`: **id**
+        - `F1`: **gender**
+        - `G1`: **age**
+        - `H1`: **id**
 
 ## Phase 2: API Creation (Apps Script)
 3.  **Open Script Editor**
