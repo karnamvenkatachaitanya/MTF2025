@@ -183,10 +183,10 @@ const Exhibitors = () => {
                         </div>
 
                         {visibleCount < filteredExhibitors.length && (
-                            <div className="text-center mt-12">
+                            <div className="load-more-container">
                                 <button
                                     onClick={handleLoadMore}
-                                    className="px-8 py-3 bg-white border border-slate-200 text-slate-700 font-semibold rounded-full hover:bg-slate-50 transition-colors shadow-sm"
+                                    className="btn-load-more"
                                 >
                                     Show More Exhibitors
                                 </button>
