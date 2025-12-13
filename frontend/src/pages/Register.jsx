@@ -68,7 +68,6 @@ const Register = () => {
                                     className="form-input"
                                     value={formData.name}
                                     onChange={e => setFormData({ ...formData, name: e.target.value })}
-                                    placeholder="Optional"
                                 />
                             </div>
                             <div className="form-group">
@@ -78,7 +77,6 @@ const Register = () => {
                                     className="form-input"
                                     value={formData.phone}
                                     onChange={e => setFormData({ ...formData, phone: e.target.value })}
-                                    placeholder="Optional"
                                 />
                             </div>
                             <div className="form-group">
@@ -88,7 +86,6 @@ const Register = () => {
                                     className="form-input"
                                     value={formData.email}
                                     onChange={e => setFormData({ ...formData, email: e.target.value })}
-                                    placeholder="Optional"
                                 />
                             </div>
                             <div className="form-group">
@@ -98,7 +95,7 @@ const Register = () => {
                                     value={formData.gender}
                                     onChange={e => setFormData({ ...formData, gender: e.target.value })}
                                 >
-                                    <option value="">Select Gender (Optional)</option>
+                                    <option value="">Select Gender</option>
                                     <option value="Male">Male</option>
                                     <option value="Female">Female</option>
                                     <option value="Other">Other</option>
@@ -111,7 +108,6 @@ const Register = () => {
                                     className="form-input"
                                     value={formData.age}
                                     onChange={e => setFormData({ ...formData, age: e.target.value })}
-                                    placeholder="Optional"
                                 />
                             </div>
                             <div className="form-group">
@@ -121,7 +117,6 @@ const Register = () => {
                                     className="form-input"
                                     value={formData.city}
                                     onChange={e => setFormData({ ...formData, city: e.target.value })}
-                                    placeholder="Optional"
                                 />
                             </div>
 
