@@ -277,3 +277,8 @@
     color: var(--color-secondary);
     background-color: #f8fafc;
 }
+
+.action-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
