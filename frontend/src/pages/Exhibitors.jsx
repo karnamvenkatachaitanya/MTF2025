@@ -141,10 +141,7 @@ const Exhibitors = () => {
                     </div>
                 </div>
 
-                {/* Results Count */}
-                <div className="results-count">
-                    Showing {displayedExhibitors.length} of {filteredExhibitors.length} exhibitors
-                </div>
+
 
                 {/* Grid */}
                 {filteredExhibitors.length > 0 ? (
