@@ -1,4 +1,10 @@
 /* Global Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   --color-primary: #0F172A;
   /* Slate 900 - Keep as primary brand color */
