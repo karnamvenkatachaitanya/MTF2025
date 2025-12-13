@@ -47,9 +47,7 @@ const Home = () => {
                             <Link to="/register" className="btn-hero-yellow">
                                 Get Visitor Pass <ArrowRight size={20} />
                             </Link>
-                            <Link to="/register" className="btn-hero-outline">
-                                Get Event Pass
-                            </Link>
+
                             <a href="#map" className="btn-hero-outline">
                                 <MapPin size={18} /> Get Directions
                             </a>

@@ -5,17 +5,33 @@
 }
 
 /* Hero Section */
+/* Hero Section */
 .hero-section {
     position: relative;
-    min-height: 80vh;
+    min-height: 100vh;
+    /* Ensure full height on mobile */
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    /* Start from top on mobile to avoid cropping */
     justify-content: center;
     overflow: hidden;
     background-color: #0F172A;
-    /* Explicit Dark for Hero */
     color: white;
-    /* Explicit White text for Hero */
+    padding-top: 2rem;
+    /* Reduced from 8rem to reduce gap, while keeping clear of navbar */
+    /* Clear fixed navbar on mobile */
+    padding-bottom: 2rem;
+}
+
+@media (min-width: 1024px) {
+    .hero-section {
+        min-height: 90vh;
+        align-items: center;
+        /* Center vertically on desktop */
+        padding-top: 4rem;
+        /* Less padding needed when centering handles it, but keeps buffer */
+        padding-bottom: 0;
+    }
 }
 
 .hero-bg-image {
@@ -59,20 +75,18 @@
 }
 
 .hero-title {
-    font-size: 3rem;
-    /* text-5xl */
+    font-size: 2.5rem;
+    /* text-4xl */
     font-weight: 700;
     color: white;
-    margin-bottom: 1.5rem;
-    /* mb-6 */
-    line-height: 1.25;
-    /* leading-tight */
+    margin-bottom: 1rem;
+    line-height: 1.2;
 }
 
 @media (min-width: 768px) {
     .hero-title {
         font-size: 4.5rem;
-        /* md:text-7xl */
+        margin-bottom: 1.5rem;
     }
 }
 
@@ -88,18 +102,18 @@
 .hero-desc {
     color: #94a3b8;
     /* text-slate-400 */
-    font-size: 1.125rem;
-    /* text-lg */
+    font-size: 1rem;
+    /* text-base */
     max-width: 42rem;
     /* max-w-2xl */
     margin: 0 auto;
-    margin-bottom: 2.5rem;
-    /* mb-10 */
+    margin-bottom: 2rem;
 }
 
 @media (min-width: 768px) {
     .hero-desc {
         font-size: 1.25rem;
+        margin-bottom: 2.5rem;
     }
 }
 
@@ -110,37 +124,40 @@
     align-items: center;
     gap: 1rem;
     margin-bottom: 3rem;
-    /* mb-12 */
     width: 100%;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     z-index: 20;
-    /* Ensure buttons are clickable */
+    padding: 0 1rem;
+    /* Add padding to container */
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
+
+    /* Changed from 1024px to 768px for earlier row layout */
     .hero-buttons {
         flex-direction: row;
     }
 }
 
-/* Removed media query for row direction to keep them stacked */
-
 .btn-hero-yellow,
 .btn-hero-outline {
     width: 100%;
-    /* Force full width within the container */
+    max-width: 280px;
+    /* Limit width on mobile */
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
 
     .btn-hero-yellow,
     .btn-hero-outline {
         width: auto;
-        min-width: 200px;
-        padding: 1rem 1.5rem;
+        min-width: 180px;
+        padding: 0.75rem 1.5rem;
+        max-width: none;
+        /* Reset max-width */
     }
 }
 
