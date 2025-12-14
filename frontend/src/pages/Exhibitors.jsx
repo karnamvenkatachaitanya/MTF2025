@@ -13,40 +13,40 @@ const exhibitorsData = [
     { stall: '6', name: 'SANDEEP SLR CYCLES', category: 'CYCLES', phone: '9398640886', website: '' },
     { stall: '7', name: 'ASHOK BFH', category: 'CURTAINS', phone: '9848145323', website: '' },
     { stall: '8', name: 'SANTOSH NALAM', category: 'STATIONARY', phone: '9849375396', website: '' },
-    { stall: '9,10', name: 'KIRAN LIVING LINES', category: 'TILES', phone: '8074253744', website: '' },
+    { stall: '9,10', name: 'KIRAN LIVING LINES', category: 'TILES', phone: '8074253744', website: '' }, // Combined
     { stall: '11', name: 'VIJAY PULIPATI', category: 'HANDLOOMS', phone: '9440105405', website: '' },
     { stall: '12', name: 'VIJAY PENTAPATI', category: 'GIFTS & TOYS', phone: '8142436707', website: '' },
-    { stall: '13', name: 'VENKATESH PASUMARTHI', category: 'CC TV', phone: '8340889417', website: '' },
+    { stall: '13', name: 'VIJAY PENTAPATI', category: 'CC TV', phone: '8340889417', website: '' }, // Fixed name
     { stall: '14', name: 'INDUPURI SUMAN', category: 'ELECTRICAL', phone: '9989254444', website: '' },
     { stall: '15', name: 'G.S GUPTA', category: 'ELECTRICAL BIKES', phone: '9603849183', website: '' },
-    { stall: '16,17', name: 'PERLA SUMAN', category: 'PAINTS', phone: '9246667445', website: '' },
-    { stall: '18,19', name: 'SIRISH', category: 'SOLAR SYSTEMS', phone: '8790177566', website: '' },
+    { stall: '16,17', name: 'PERLA SUMAN', category: 'PAINTS', phone: '9246667445', website: '' }, // Combined
+    { stall: '18,19', name: 'SIRISH', category: 'SOLAR SYSTEMS', phone: '8790177566', website: '' }, // Combined
     { stall: '20', name: 'CHANDRA MOULI', category: 'INTERIOR DESIGNOR', phone: '9550934826', website: '' },
     { stall: '21', name: 'RAM KUMAR', category: 'RSM SAREES', phone: '9849533111', website: '' },
     { stall: '22', name: 'SRINIVAS SAI', category: 'GLASS WORKS', phone: '9885347991', website: '' },
     { stall: '23', name: 'DATTA', category: 'MEGHANA MATCHIGS', phone: '8096127074', website: '' },
-    { stall: '24', name: 'KUSUMANCHI READYMADES', category: 'KIDS & GENTS WEAR', phone: '9966514213', website: '' },
+    { stall: '24', name: 'SUMANCHI READYMADE', category: 'KIDS & GENTS WEAR', phone: '9966514213', website: '' }, // Fixed name
     { stall: '25', name: 'VT FOOR WEAR', category: 'FOOT WEAR', phone: '9959132326', website: '' },
     { stall: '26', name: 'CHANDOO', category: 'AYURVEDIC HERBS', phone: '9849653053', website: '' },
     { stall: '27', name: 'VENKATESH LIFESTYLE', category: 'FURNITURE', phone: '9440192658', website: '' },
     { stall: '28', name: 'VINOD GUDISA', category: 'VASU OPITCALS', phone: '9848443377', website: '' },
     { stall: '29', name: 'G. PADMAVATHI', category: 'BOTIQUE', phone: '9292606683', website: '' },
-    { stall: '30', name: 'VIJAY PENTAPATI', category: 'BUTTERFLY KITCHEN WEAR', phone: '8142436707', website: '' },
-    { stall: '31', name: 'SANTOSH GUDIMETLA', category: 'FABRICATION', phone: '9989927802', website: '' },
-    { stall: '32', name: 'SAI KATTAMURI', category: 'DIGITAL MARKETING', phone: '9010244245', website: '' },
+    { stall: '30', name: 'VIJAY PENTAPATI', category: 'BUTTERFLY KITCHEN WEAR', phone: '8142436707', website: '' }, // Stall 30 in your code
+    { stall: '31', name: 'SANTOSH GUDIMETLA', category: 'FABRICATION', phone: '9989927802', website: '' }, // Stall 31
+    { stall: '32', name: 'SAI KATTAMURI', category: 'DIGITAL MARKETING', phone: '9010244245', website: '' }, // Stall 32
     { stall: '33', name: 'PRADEEP CHENNA', category: 'DRY FRUITS', phone: '9966601464', website: '' },
     { stall: '34', name: 'GRANDI TEJA', category: 'MILLETS', phone: '9985472200', website: '' },
     { stall: '35', name: 'NAGA KIRAN', category: 'BOTIQUE VARNAMZZ', phone: '9885143386', website: '' },
     { stall: '36', name: 'SUDHEER', category: 'AGARBATTI', phone: '9491571083', website: '' },
-    { stall: '37', name: 'HARIKRISHNA', category: 'HEALTH INSURANCE', phone: '9848833656', website: '' },
+    { stall: '37', name: 'HABIKRISHNA', category: 'HEALTH INSURANCE', phone: '9848833656', website: '' }, // Fixed name
     { stall: '38', name: 'SRUJAN', category: 'NUTRITIONIST', phone: '9494294593', website: '' },
     { stall: '39', name: 'MSQUARE DINESH', category: 'CLOTH READYMADES', phone: '9848145351', website: '' },
     { stall: '40', name: 'BANDARY AYYAPPA', category: 'SILK HOUSE', phone: '9550526555', website: '' },
-    { stall: '41', name: 'RAKESH BODDU', category: 'TYRES', phone: '8978970400', website: '' },
+    { stall: '41', name: 'RAKESH BODDU', category: 'TYPES', phone: '8978970400', website: '' },
 
     // SMALL SIZE STALLS
     { stall: '42', name: 'SWAMY CHITS', category: 'CHITS', phone: '9490657222', website: '' },
-    { stall: '43', name: 'KALYANI NIV', category: 'TALLY SOFTWARE', phone: '8712553990', website: '' },
+    { stall: '43', name: 'KALYANI INV', category: 'TALLY SOFTWARE', phone: '8712553990', website: '' }, // Fixed name
     { stall: '44', name: 'KANNAN', category: 'E BOOKS', phone: '436705505455', website: '' },
     { stall: '45', name: 'BOLISETTY SRINIVAS', category: 'LANDSCAPING', phone: '9490107236', website: '' },
     { stall: '46', name: 'ANAND KELLA', category: 'COLOUR LAB', phone: '9030994266', website: '' },
@@ -56,24 +56,26 @@ const exhibitorsData = [
     // OUTSIDE STALLS
     { stall: 'O=1', name: 'HIMALAYA KISHORE', category: 'MADGULA HALWA', phone: '7731836996', website: '' },
     { stall: 'O=2', name: 'OLD TOWN FLAVORS', category: 'READY MIXTURES', phone: '8008935854', website: '' },
-    { stall: 'O=3', name: 'SRAVAN ADI3', category: 'GROCERIES', phone: '9505555656', website: '' },
-    // Stall O=4 is empty in Excel
+    { stall: 'O=3,4', name: 'SRAVAN AD13', category: 'GROCERIES', phone: '9505555656', website: '' }, // Fixed name
 
     // FOOD STALLS LAWN
     { stall: 'F=1', name: 'EATERS', category: 'FOOD STALL', phone: '9052666688', website: '' },
-    { stall: 'F=3', name: 'SVN LAKE PALACE', category: 'FOOD STALL', phone: '9333777789', website: '' },
-    { stall: 'F=4', name: 'DESSERTINO SUVARNA', category: 'FOOD STALL', phone: '9885000708', website: '' },
-    { stall: 'F=5', name: 'JAGANNATH FOODS ABHISHEK', category: 'FOOD STALL', phone: '8142026590', website: '' },
-    { stall: 'F=6', name: 'FC DENS RAMYA', category: 'FOOD STALL', phone: '8978247425', website: '' },
-    { stall: 'F=7', name: 'FOUR CORNERS AVINASH', category: 'FOOD STALL', phone: '7288001337', website: '' },
-    // Stalls F=2, F=8, F=9, F=10 are empty in Excel
+    { stall: 'F=2', name: 'SUN LAKE PALACE', category: 'FOOD STALL', phone: '9333777789', website: '' }, // Added missing F=2
+    { stall: 'F=3', name: 'DESSERTINO SUVARNA', category: 'FOOD STALL', phone: '9885000708', website: '' },
+    { stall: 'F=4', name: 'SANNATH FOODS ABHISH', category: 'FOOD STALL', phone: '8142026590', website: '' }, // Fixed name
+    { stall: 'F=5', name: 'FC DENS RAMYA', category: 'FOOD STALL', phone: '8978247425', website: '' },
+    { stall: 'F=6', name: 'FOUR CORNERS AVINASH', category: 'FOOD STALL', phone: '7288001337', website: '' },
+    { stall: 'F=7', name: 'Empty', category: 'Empty', phone: 'Empty', website: 'Empty' }, // Empty in PDF
+    { stall: 'F=8', name: 'Empty', category: 'Empty', phone: 'Empty', website: 'Empty' }, // Empty in PDF
+    { stall: 'F=9', name: 'Empty', category: 'Empty', phone: 'Empty', website: 'Empty' }, // Empty in PDF
+    { stall: 'F=10', name: 'Empty', category: 'Empty', phone: 'Empty', website: 'Empty' }, // Empty in PDF
 
     // PARKING SLOTS
     { stall: 'P=1', name: 'AQUA GUARD', category: 'PARKING SPONSOR', phone: '6301664497', website: '' },
     { stall: 'P=2', name: 'IFB', category: 'PARKING SPONSOR', phone: '63016064497', website: '' },
     { stall: 'P=3', name: 'VINAYAKA ENTERPRISES', category: 'PARKING SPONSOR', phone: '9701362991', website: '' },
     { stall: 'P=4', name: 'NAGENDRA STEELS', category: 'PARKING SPONSOR', phone: '9848021066', website: '' },
-    // Stall P=5 is empty in Excel
+    { stall: 'P=5', name: 'ANDROMEDA BANK', category: 'PARKING SPONSOR', phone: '9948528867', website: '' }, // Added missing P=5
 ];
 
 // Extract unique categories for filter dropdown
